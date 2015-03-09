@@ -18,7 +18,12 @@ class EeClearStorageServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app['storage:clear-views'] = $this->app->share(function($app)
+		{
+			return new CLIStorageClearViews;
+		});
+
+		$this->commands('storage:clear-views');
 	}
 
 	/**

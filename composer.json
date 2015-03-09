@@ -1,6 +1,6 @@
 {
     "name": "eems/ee-clear-storage",
-    "description": "",
+    "description": "Clears Laravel's app/storage/views directory.",
     "authors": [
         {
             "name": "Tom Mount",
@@ -12,6 +12,9 @@
         "illuminate/support": "4.2.*"
     },
     "autoload": {
+        "classmap": [
+            "src/commands"
+        ],
         "psr-0": {
             "Eems\\EeClearStorage": "src/"
         }
