@@ -1,6 +1,8 @@
 {
     "name": "eems/ee-clear-storage",
     "description": "Clears Laravel's app/storage/views directory.",
+    "keywords": ["laravel"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Tom Mount",

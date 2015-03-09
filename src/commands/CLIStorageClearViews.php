@@ -1,7 +1,7 @@
 <?php namespace Eems\EeClearStorage;
 
 use \Illuminate\Console\Command;
-use \Illuminate\Filesystem\Filesystem;
+use \File;
 
 class CLIStorageClearViews extends Command {
 
@@ -20,24 +20,13 @@ class CLIStorageClearViews extends Command {
 	protected $description = "Clears Laravel's app/storage/views directory.";
 
 	/**
-	 * Create a new command instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		parent::__construct();
-	}
-
-	/**
 	 * Execute the console command.
 	 *
 	 * @return mixed
 	 */
 	public function fire()
 	{
-		$files = File::glob(storage_path('views/*'));
-		var_dump($files); die();
+		File::delete(File::files(storage_path('views')));
 	}
 
 }
