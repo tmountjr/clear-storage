@@ -1,13 +1,13 @@
 {
-    "name": "eems/ee-clear-storage",
+    "name": "tmountjr/clear-storage",
     "description": "Clears Laravel's app/storage/views directory.",
     "keywords": ["laravel"],
-    "homepage": "https://bitbucket.org/trueaction/ee-clear-storage/",
+    "homepage": "https://github.com/tmountjr/clear-storage",
     "license": "MIT",
     "authors": [
         {
             "name": "Tom Mount",
-            "email": "tmountjr@ebay.com",
+            "email": "tmountjr@gmail.com",
             "role": "Developer"
         }
     ],
@@ -20,7 +20,7 @@
             "src/commands"
         ],
         "psr-0": {
-            "Eems\\EeClearStorage": "src/"
+            "Tmountjr\\ClearStorage": "src/"
         }
     },
     "minimum-stability": "stable"

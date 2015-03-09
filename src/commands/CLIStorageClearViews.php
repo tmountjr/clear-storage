@@ -1,4 +1,4 @@
-<?php namespace Eems\EeClearStorage;
+<?php namespace Tmountjr\ClearStorage;
 
 use \Illuminate\Console\Command;
 use \File;
