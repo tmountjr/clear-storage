@@ -11,7 +11,10 @@ Install using composer: `composer require tmountjr/clear-storage:~1.0`
 Be sure to add the package to your service provider list in `app/config/app.php`:
 
 ```
-'Tmountjr\ClearStorage\ClearStorageServiceProvider',
+'providers' => array(
+	// additional providers
+	'Tmountjr\ClearStorage\ClearStorageServiceProvider',
+),
 ```
 
 ## Usage ##
